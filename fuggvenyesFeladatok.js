@@ -1,3 +1,5 @@
+"use strict";
+exports.__esModule = true;
 function TeglalapKeruletTerulet(a, b) {
     var kerulet = 2 * (a + b);
     var terulet = a * b;

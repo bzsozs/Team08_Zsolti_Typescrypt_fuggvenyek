@@ -1,3 +1,4 @@
+export { };
 function TeglalapKeruletTerulet(a: number, b: number): void {
 
     let kerulet: number = 2 * (a + b);
