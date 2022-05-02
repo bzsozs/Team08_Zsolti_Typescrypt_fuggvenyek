@@ -32,21 +32,3 @@ function HarommalOszthatokSzama(adatTomb) {
     }
     return darab;
 }
-function Nyeroszamok(mennyiseg, alsoHatar, felsoHatar) {
-    var i = 0;
-    var nyeroSzamok = [];
-    while (i < mennyiseg) {
-        var generaltSzam = Math.round(Math.random() * (felsoHatar - alsoHatar)) + alsoHatar;
-        var szerepelE = false;
-        for (var j = 0; j < nyeroSzamok.length; j++) {
-            if (nyeroSzamok[j] == generaltSzam) {
-                szerepelE = true;
-            }
-        }
-        if (szerepelE == false) {
-            nyeroSzamok.push(generaltSzam);
-            i++;
-        }
-    }
-    return nyeroSzamok;
-}

@@ -34,21 +34,4 @@ function HarommalOszthatokSzama(adatTomb: Array<number>): number {
     return darab;
 }
 
-function Nyeroszamok(mennyiseg: number, alsoHatar: number, felsoHatar: number): Array<number> {
-    let i = 0;
-    let nyeroSzamok = [];
-    while (i < mennyiseg) {
-        let generaltSzam: number = Math.round(Math.random() * (felsoHatar - alsoHatar)) + alsoHatar;
-        let szerepelE: boolean = false;
-        for (let j = 0; j < nyeroSzamok.length; j++) {
-            if (nyeroSzamok[j] == generaltSzam) {
-                szerepelE = true;
-            }
-        }
-        if (szerepelE == false) {
-            nyeroSzamok.push(generaltSzam);
-            i++;
-        }
-    }
-    return nyeroSzamok;
-}
+
